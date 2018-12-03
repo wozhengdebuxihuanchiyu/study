@@ -1,0 +1,17 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: simple-zuul
+zuul:
+  routes:
+    simple-user:
+      path: /simple-user/**
+      serviceId: simple-user
+    simple-movie-feign:
+      path: /simple-movie-feign/**
+      serviceId: simple-movie-feign
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://localhost:1111/eureka

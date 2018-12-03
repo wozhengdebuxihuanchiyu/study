@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="simple-eureka-server" />
+        <module name="simple-eureka-server-2" />
+        <module name="simple-hystrix-dashboard" />
+        <module name="simple-movie" />
+        <module name="simple-movie-2" />
+        <module name="simple-movie-feign" />
+        <module name="simple-turbine" />
+        <module name="simple-user" />
+        <module name="simple-user-2" />
+        <module name="simple-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="simple-eureka-serve-2r" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="simple-eureka-server" options="" />
+      <module name="simple-movie" options="" />
+      <module name="simple-user" options="" />
+    </option>
+  </component>
+</project>

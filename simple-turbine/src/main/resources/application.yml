@@ -1,0 +1,15 @@
+server:
+  port: 3001
+management:
+  port: 4001
+spring:
+  application:
+    name: simple-turbine
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://peer1:1111/eureka/,http://peer2:1112/eureka/
+turbine:
+  app-config: Frist-Spring-Cloud-Customer-1,Frist-Spring-Cloud-Customer-2
+  cluster-name-expression: "'default'"
+  combine-host-port: true

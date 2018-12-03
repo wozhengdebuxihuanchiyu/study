@@ -1,0 +1,9 @@
+server:
+  port: 7900
+spring:
+  application:
+    name: simple-movie
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1111/eureka,http://peer2:1112/eureka
